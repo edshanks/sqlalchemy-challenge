@@ -88,7 +88,7 @@ def precipitation():
         
     session.close()
     
-    print("Server received request for precipitation data.....")
+    print("Server received request for 'precipitation'.....")
     return jsonify(prcp_list)
     
     
@@ -135,7 +135,7 @@ def tobs():
     
     session.close()
     
-    print("Server received request for 'all temperature data'.....")
+    print("Server received request for 'tobs'.....")
     return jsonify(tobs_list)
 
 #########################################################################################
@@ -160,7 +160,7 @@ def start(start):
     
     session.close()
     
-    print("Server received request for 'temperature data with specified start date'")
+    print("Server received request for 'start' temperature data")
     return jsonify(min_max_avg_start)
     
 ###########################################################################################
@@ -184,7 +184,7 @@ def start_end(start, end):
     
     session.close()
     
-    print("Server received request for 'temperature data with specified start and end dates'")
+    print("Server received request for 'start/end' temperature data")
     return jsonify(min_max_avg_start_end_list)
     
 if __name__ == '__main__':
